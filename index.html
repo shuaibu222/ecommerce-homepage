@@ -1,44 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay has-fade"></div>
+    <header class="header">
+      <div class="h-row1">
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo">
+          <img src="/assets/images/logo.svg" alt="logo" />
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="h-row2">
+        <span class="cart-nav">
+          <img src="/assets/images/icon-cart.svg" alt="icon-cart"
+        /></span>
+        <span class="avatar">
+          <img src="/assets/images/image-avatar.png" alt="image-avatar" />
+        </span>
+      </div>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+      <div id="mySidenav" class="sidenav">
+        <img
+          src="/assets/images/icon-close.svg"
+          id="closeSidebar"
+          class="closebtn"
+          alt="icon-close"
+        />
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="col-1">
+        <div class="big-image">
+          <img
+            src="/assets/images/image-product-1.jpg"
+            class="b-image active"
+            id="product-1"
+            alt="image-product-1"
+          />
+          <img
+            src="/assets/images/image-product-2.jpg"
+            class="b-image none"
+            id="product-2"
+            alt="image-product-2"
+          />
+          <img
+            src="/assets/images/image-product-3.jpg"
+            class="b-image none"
+            id="product-3"
+            alt="image-product-3"
+          />
+          <img
+            src="/assets/images/image-product-4.jpg"
+            class="b-image none"
+            id="product-4"
+            alt="image-product-4"
+          />
+          <div class="max-width-1">
+            <span
+              ><img src="/assets/images/icon-previous.svg" alt="icon-previous"
+            /></span>
+            <span
+              ><img src="/assets/images/icon-next.svg" alt="icon-next"
+            /></span>
+          </div>
+        </div>
+        <div class="max-width-2">
+          <span data-id="product-1" class="tabs-parent"
+            ><img
+              src="/assets/images/image-product-1-thumbnail.jpg"
+              alt="thumbnail"
+              class="tabs"
+          /></span>
+          <span data-id="product-2" class="tabs-parent"
+            ><img
+              src="/assets/images/image-product-2-thumbnail.jpg"
+              alt="thumbnail"
+              class="tabs"
+          /></span>
+          <span data-id="product-3" class="tabs-parent"
+            ><img
+              src="/assets/images/image-product-3-thumbnail.jpg"
+              alt="thumbnail"
+              class="tabs"
+          /></span>
+          <span data-id="product-4" class="tabs-parent"
+            ><img
+              src="/assets/images/image-product-4-thumbnail.jpg"
+              alt="thumbnail"
+              class="tabs"
+          /></span>
+        </div>
+      </div>
+      <div class="col-2">
+        <p class="sneaker">Sneaker Company</p>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p class="p">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price">
+          <div class="money">
+            <p>$125.00</p>
+            <span>50%</span>
+          </div>
 
-  Sneaker Company
+          <del>$250.00</del>
+        </div>
+        <div class="cart">
+          <div class="inc-dec">
+            <span class="dec"
+              ><img src="/assets/images/icon-minus.svg" alt="icon-minus"
+            /></span>
+            <span>0</span>
+            <span class="inc"
+              ><img src="/assets/images/icon-plus.svg" alt="icon-plus"
+            /></span>
+          </div>
+          <div class="add-cart">
+            <span
+              ><img src="/assets/images/icon-cart copy.svg" alt="icon-cart"
+            /></span>
+            <p>Add to cart</p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="/script.js"></script>
+  </body>
 </html>
