@@ -20,7 +20,7 @@
 
 ### Links
 
-- Live Site URL: [E-commerce-page](https://ecommerce-homepage.pages.dev/)
+- Live Site URL: [https://ecommerce-homepage.pages.dev/](https://ecommerce-homepage.pages.dev/)
 
 ### Built with
 
