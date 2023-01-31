@@ -20,7 +20,7 @@
 
 ### Links
 
-- Live Site URL: [E-commerce-page](https://www.ecommercementor.com)
+- Live Site URL: [E-commerce-page](https://ecommerce-homepage.pages.dev/)
 
 ### Built with
 
